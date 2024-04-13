@@ -7,7 +7,7 @@ import a3 from "../assets/image/porto2.jpeg";
 const TypingAnimation = () => {
   const [text, setText] = useState("");
   const originalText = " I I exude a captivating blend of charisma and intelligence, effortlessly drawing people into my orbit. With a natural knack for communication, I navigate social situations with ease, leaving a lasting impression on those I encounter.";
-  const typingSpeed = 80; // Adjust typing speed (milliseconds per character)>
+  const typingSpeed = 80; 
 
   useEffect(() => {
     let charIndex = 0;

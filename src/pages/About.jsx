@@ -6,7 +6,6 @@ const About = () => {
     <div className="container mx-auto py-8 bg-black text-white h-auto ">
       <div className="px-8">
       <div className="container mx-auto px-4 lg:px-8 py-8">
-      {/* About Section */}
       <div className="mb-8">
         <h2 className="text-2xl font-bold mb-4">About Me</h2>
         <p className="mb-4">
@@ -19,9 +18,7 @@ const About = () => {
           est, iaculis in, pretium quis, viverra ac, nunc. Praesent eget sem vel
           leo ultrices bibendum.
         </p>
-      </div>
-
-      {/* Skills Section */}
+      </div>      
       <div className="pt-2">
         <h2 className="text-2xl font-bold mb-4">Skills</h2>
         <div className="mb-4">
@@ -54,6 +51,28 @@ const About = () => {
               style={{ width: "80%" }}
             >
               80%
+            </div>
+          </div>
+        </div>
+        <div className="mb-4">
+          <p className="mb-2">React</p>
+          <div className="w-full bg-gray-300 rounded-lg">
+            <div
+              className="bg-blue-500 text-xs leading-none py-1 text-center text-white rounded-lg"
+              style={{ width: "60%" }}
+            >
+              60%
+            </div>
+          </div>
+        </div>
+        <div className="mb-4">
+          <p className="mb-2">Node js</p>
+          <div className="w-full bg-gray-300 rounded-lg">
+            <div
+              className="bg-blue-500 text-xs leading-none py-1 text-center text-white rounded-lg"
+              style={{ width: "85%" }}
+            >
+              85%
             </div>
           </div>
         </div>

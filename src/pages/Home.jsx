@@ -58,7 +58,7 @@ const Home = () => {
             <TypingAnimation />
             <button id="btt"
               className="bg-yellow-700 p-2 rounded-xl hover:bg-yellow-500"
-              onClick={() => window.location.href = 'tel:+2507887977557'}
+              onClick={() => window.location.href = 'tel:+250787977557'}
             >
               Make a Real Call
             </button>

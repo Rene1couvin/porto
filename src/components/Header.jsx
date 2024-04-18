@@ -1,16 +1,15 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="bg-gray-900 container mx-auto">
-      <div className="container mx-auto px-4 lg:px-8 py-4">
+    <div className="bg-gray-900 container mx-auto rounded-xl">
+    <div className="bg-gray-900 container fixed mx-auto rounded-xl">
+      <div className="container mx-auto px-4 lg:px-8 py-4 fixed">
         <div className="flex justify-between items-center">
           <p className="text-white text-xl font-bold">Portfolio</p>
-
-          
           <button
             className="block lg:hidden text-white focus:outline-none"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -30,70 +29,55 @@ const Header = () => {
           {/* Navigation links */}
           <ul className={`hidden lg:flex space-x-6 text-white`}>
             <li>
-              <NavLink
-                to="/"
-                activeClassName="font-bold"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/about"
-                activeClassName="font-bold"
-                onClick={() => setIsMenuOpen(false)}
-              >
+            <a href="/#about">
                 About
-              </NavLink>
+              </a>
             </li>
             <li>
-              <NavLink
-                to="/contact"
-                activeClassName="font-bold"
-                onClick={() => setIsMenuOpen(false)}
-              >
+              
+              <a href="/#contact">
                 Contact
-              </NavLink>
+              </a>
             </li>
           </ul>
         </div>
 
         {/* Mobile Navigation Menu */}
         <ul
-          className={`lg:hidden mt-4 ${
+          className={`lg:hidden justify-right bg-white mt-4 ${
             isMenuOpen ? "block" : "hidden"
           } space-y-2`}
         >
           <li>
-            <NavLink
-              to="/"
+            <a
+              href="/#home"
               activeClassName="font-bold"
               onClick={() => setIsMenuOpen(false)}
             >
               Home
-            </NavLink>
+            </a>
           </li>
           <li>
-            <NavLink
-              to="/about"
+            <a
+              href="/#about"
               activeClassName="font-bold"
               onClick={() => setIsMenuOpen(false)}
             >
               About
-            </NavLink>
+            </a>
           </li>
           <li>
-            <NavLink
-              to="/contact"
+            <a
+              href="/#contact"
               activeClassName="font-bold"
               onClick={() => setIsMenuOpen(false)}
             >
               Contact
-            </NavLink>
+            </a>
           </li>
         </ul>
       </div>
+    </div>
     </div>
   );
 };
